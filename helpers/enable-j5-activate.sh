@@ -32,7 +32,7 @@ j5activate() {
         esac
     done
     if [ "$show_syntax" != "" ]; then
-        echo syntax j5activate "[framework-src-label]"
+        echo syntax j5activate "[--python3]" "[framework-src-label]"
         return 1
     elif [ "$target_version" == "" ]; then
         J5DIR="$J5_PARENT_GIT_DIR/j5-framework/j5/src/"
